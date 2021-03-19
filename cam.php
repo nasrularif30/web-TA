@@ -18,44 +18,19 @@
     <!-- End layout styles -->
     <link rel="shortcut icon" href="assets/images/favicon.ico" />
   </head>
+  
   <body>
     <div class="container-scroller">
       <!-- partial:partials/_navbar.html -->
-      <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
-        <div class="text-center navbar-brand-wrapper d-flex align-items-left align-content-left">
-          <!-- <a class="navbar-brand brand-logo" href="index.html"><img src="assets/images/logo-mini.svg" alt="logo" /></a>
-          <a class="navbar-brand brand-logo-mini" href="index.html"><img src="assets/images/logo-mini.svg" alt="logo" /></a> -->
-        </div>
-        <div class="navbar-menu-wrapper d-flex align-items-stretch">
-          <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
-            <span class="mdi mdi-menu"></span>
-          </button>
-          <ul class="navbar-nav navbar-nav-right"></ul>
-        </div>
-      </nav>
+      <?php include "partials/_navbar.html"; ?> 
       <!-- partial -->
       <div class="container-fluid page-body-wrapper">
         <!-- partial:partials/_sidebar.html -->
-        <nav class="sidebar sidebar-offcanvas" id="sidebar">
-          <ul class="nav">
-            <li class="nav-item">
-              <a class="nav-link" href="index.php">
-                <span class="menu-title">Dashboard</span>
-                <i class="mdi mdi-home menu-icon"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="cam.php">
-                <span class="menu-title">Monitoring</span>
-                <i class="mdi mdi-camcorder menu-icon"></i>
-              </a>
-            </li>
-          </ul>
-        </nav>
+        <?php include "partials/_sidebar.html"; ?> 
         <!-- partial -->
         <div class="main-panel">
           <div class="content-wrapper">
-            <div class="page-header">
+          <div class="page-header">
               <h3 class="page-title">
                 <span class="page-title-icon bg-gradient-primary text-white mr-2">
                   <i class="mdi mdi-camcorder"></i>
@@ -73,19 +48,6 @@
                           class="btn btn-danger">Kamera</button>
                       </a>
                     </div>
-                    <!-- <div class="card bg-warning" style="width: 60rem; height: 28rem;">
-                      <div class="card-body">
-                        <div class="card-body-icon"><i class="fas fa-hospital-user mr-2">
-                        </i></div> 
-                        <h5 class="card-title">Tampilkan Video Komunikasi</h5>
-                        <h5 class="card-title"></h5>
-                        <div class="navbar-form navbar-right">
-                          <a href="camera.html"><button type="button" 
-                              class="btn btn-danger">Kamera</button>
-                          </a>
-                        </div>
-                        </div>
-                    </div> -->
                     <div class="d-flex mt-5 align-items-top">
                     </div>
                   </div>
@@ -93,19 +55,11 @@
               </div>
             </div>
           </div>
-          <!-- content-wrapper ends -->
           <!-- partial:partials/_footer.html -->
-          <!-- <footer class="footer">
-            <div class="container-fluid clearfix">
-              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com 2020</span>
-              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin templates </a> from Bootstrapdash.com</span>
-            </div>
-          </footer> -->
+          <?php include "partials/_footer.html"; ?> 
           <!-- partial -->
         </div>
-        <!-- main-panel ends -->
       </div>
-      <!-- page-body-wrapper ends -->
     </div>
     <!-- container-scroller -->
     <!-- plugins:js -->
